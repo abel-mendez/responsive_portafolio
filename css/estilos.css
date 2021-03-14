@@ -1,0 +1,471 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?tc7q2y");
+  src: url("../fonts/icomoon.eot?tc7q2y#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?tc7q2y") format("truetype"),
+    url("../fonts/icomoon.woff?tc7q2y") format("woff"),
+    url("../fonts/icomoon.svg?tc7q2y#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "\e9bd";
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+}
+
+.burger-button {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  position: fixed;
+  left: 5px;
+  top: 5px;
+  display: none;
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  line-height: 40px;
+  z-index: 40;
+}
+
+figure {
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fjalla One", sans-serif;
+}
+h1 {
+  color: white;
+  line-height: 1.5;
+  font-size: 40px;
+  letter-spacing: -0.2 px;
+  margin: 0;
+}
+
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.header ol {
+  display: flex;
+  height: inherit;
+}
+.header ol li {
+  height: inherit;
+}
+
+h1 strong {
+  color: #026fff;
+}
+h2 {
+  color: #026fff;
+  text-transform: uppercase;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.header {
+  background-color: #1b2127;
+  color: white;
+  display: flex;
+  height: 90px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.header a {
+  color: white;
+  text-decoration: none;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.hero {
+  height: 300px;
+  background-color: #1b2127;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.hero-image {
+  object-fit: cover;
+}
+
+.project-title {
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.project-course,
+.project-date,
+.project-url {
+  margin: 10px 0;
+}
+.project-description {
+  font-size: 20px;
+}
+
+.project strong {
+  font-family: "Fjalla One", sans-serif;
+}
+
+.project {
+  display: flex;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 20px;
+  background: white;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.project-details {
+  width: 50%;
+}
+.project-imgContainer {
+  width: 50%;
+}
+.project-img {
+  max-width: 100%;
+}
+
+.portfolio {
+  background-color: #fafafa;
+  padding: 20px;
+}
+.menu {
+  height: inherit;
+}
+
+.footer {
+  color: white;
+  background-color: #1b2127;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer img {
+  vertical-align: middle;
+}
+.footer a {
+  color: white;
+}
+
+.youtube-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+.flexible-video {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+}
+.event {
+  margin: 1%;
+  flex-shrink: 0;
+  width: 47%;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #f4fbff;
+}
+.event-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.event img {
+  width: 480px;
+  height: 200px;
+  object-fit: cover;
+}
+.event-details {
+  margin: 20px 40px;
+  padding: 20px;
+  margin-top: -40px;
+  background-color: white;
+  position: relative;
+  text-align: center;
+}
+.event-description {
+  text-align: left;
+}
+.event-url {
+  border: 1px solid;
+  padding: 5px 20px;
+  text-decoration: none;
+  color: #056fff;
+  border-radius: 5px;
+}
+.event-list-title {
+  margin-left: 20px;
+}
+.contact {
+  background-color: #056fff;
+  color: white;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-size: 50px;
+  margin: 0px 10px;
+}
+.social-link.twitter {
+  background-image: url("../images/twitter.svg");
+}
+.social-link.facebook {
+  background-image: url("../images/facebook.svg");
+}
+.social-link.github {
+  background-image: url("../images/github.svg");
+}
+.social-link.instagram {
+  background-image: url("../images/instagram.svg");
+}
+
+.form-email input {
+  border: gray;
+  border-style: solid;
+  padding: 10px 20px 10px 25px;
+  background-size: 17px;
+  background-image: url("../images/envelope.svg");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 5px;
+}
+.form-email button {
+  margin-top: 10px;
+  display: block;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  background: transparent;
+  height: 35px;
+  width: 120px;
+}
+.form-email h3 {
+  font-family: "Source Sans Pro", sans-serif;
+}
+.container {
+  max-width: 1000px;
+  flex: 1;
+  height: inherit;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  margin: 0 auto;
+  flex-wrap: inherit;
+}
+
+.html-video {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .event-list-title {
+    margin-left: 0;
+  }
+  .container {
+    padding: 0 1em;
+  }
+  .hero {
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 2em;
+  }
+  h1 {
+    font-size: 2em;
+    z-index: 10;
+  }
+  .hero-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  h2 {
+    font-size: 1.2em;
+    margin: 0.5em 0;
+  }
+  .burger-button {
+    display: block;
+  }
+  .header {
+    display: block;
+    height: auto;
+  }
+  .header ol {
+    display: block;
+  }
+  .header ol li {
+    height: 50px;
+    text-align: center;
+    margin-bottom: 4em;
+  }
+  .header a {
+    height: 40px;
+    font-size: 2em;
+    justify-content: center;
+    text-decoration: underline;
+  }
+  .logo {
+    text-align: center;
+  }
+  .project {
+    display: block;
+  }
+  .project-imgContainer {
+    width: auto;
+    text-align: center;
+  }
+  .project-details {
+    width: auto;
+  }
+  .project-title {
+    font-size: 1.5em;
+    margin-bottom: 0.3em;
+  }
+  .project-course {
+    font-size: 0.7em;
+  }
+  .project-url {
+    font-size: 1em;
+  }
+  .project-date {
+    font-size: 1em;
+  }
+  .project-description {
+    font-size: 1em;
+  }
+  .project-course,
+  .project-description,
+  .project-url {
+    margin: 0.4em 0;
+  }
+  .event {
+    width: auto;
+    flex-shrink: 1;
+  }
+  .event img {
+    width: 100%;
+    object-position: 0 -60px;
+  }
+  .event-details {
+    margin: -2em 0.5em 0.5em;
+    padding: 1em;
+  }
+  .menu {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 15;
+    width: 100vw;
+    /* height: 100vh; */
+    bottom: 0;
+    top: 0;
+    left: -100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+  }
+  .menu.is-active {
+    left: 0;
+  }
+  .icon-menu:hover .menu {
+    display: initial;
+  }
+  .portfolio {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.5em;
+  }
+  .project-details {
+    font-size: 14px;
+  }
+  .contact {
+    height: auto;
+    padding: 1em 0;
+    text-align: center;
+    display: block;
+  }
+  .form-email button {
+    margin: 1em auto;
+  }
+  .form-email h3 {
+    margin-top: 0;
+  }
+  .footer {
+    display: block;
+    text-align: center;
+    border: 1px solid transparent;
+  }
+  .event img {
+    object-position: center;
+  }
+}
+@media screen and (max-width: 320px) {
+  h1 {
+    font-size: 1.2em;
+  }
+  .hero {
+    padding: 2em 1em;
+  }
+}
